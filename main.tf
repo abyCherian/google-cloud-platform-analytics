@@ -1,6 +1,6 @@
 provider "google" {
-  project     = "ga4-mcp-472215"
-  region      = "us-central1"
+  project     = "ga4-mcp-472215"    # Get your GCP Project-ID
+  region      = "us-central1"        # Select your region
   credentials = "key.json" # Service account key file — download from GCP → IAM → Service Accounts
 }
 
@@ -152,3 +152,4 @@ output "preview_server_url" {
   description = "Paste into GTM → Admin → Container Settings → Preview server URL"
   value       = google_cloud_run_v2_service.sgtm_preview.uri
 }
+

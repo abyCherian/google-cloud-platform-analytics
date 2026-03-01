@@ -228,14 +228,14 @@ terraform destroy
 # Check Cloud Run logs for tagging server
 gcloud logging read \
   'resource.type="cloud_run_revision" AND resource.labels.service_name="sgtm-tagging-server"' \
-  --project=ga4-mcp-472215 \
+  --project=XXX-XXX-XXXX \
   --limit=20 \
   --order=desc
 
 # Check Cloud Run logs for preview server
 gcloud logging read \
   'resource.type="cloud_run_revision" AND resource.labels.service_name="sgtm-preview-server"' \
-  --project=ga4-mcp-472215 \
+  --project=XXX-XXX-XXXX \
   --limit=20 \
   --order=desc
 ```

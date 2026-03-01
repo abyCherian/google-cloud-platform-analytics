@@ -112,8 +112,8 @@ google-cloud-platform-analytics/
 
 | Variable | Description | Required | Default |
 |---|---|---|---|
-| `project_id` | GCP Project ID | No | `ga4-mcp-472215` |
-| `region` | GCP region | No | `us-central1` |
+| `project_id` | GCP Project ID | **Yes** | `XX-XXX-47XX15` |
+| `region` | GCP region | No | `us-central1` | Based on project requirements, you need to change
 | `container_config` | GTM container config string | **Yes** | — |
 | `tagging_domain` | Custom domain for tagging server | **Yes** | — |
 
